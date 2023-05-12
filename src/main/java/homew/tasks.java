@@ -38,14 +38,14 @@ public class tasks {
     }
 
 
-//    2. Каталог товаров книжного магазина сохранен в виде двумерного списка List<ArrayList<String>> так,
+    //    2. Каталог товаров книжного магазина сохранен в виде двумерного списка List<ArrayList<String>> так,
 //    что на 0-й позиции каждого внутреннего списка содержится название жанра, а на остальных позициях - названия книг.
 //    Напишите метод для заполнения данной структуры(можно через консоль).
 //    Пример: "Классика", "Преступление и наказание", "Война и мир", "Анна Каренина".
 //            "Научная фантастика", "Солярис", "Ночной дозор", "Братья Стругацкие".
 //            "Детектив", "Десять негритят".
 //            "Фэнтези", "Хроники Нарнии", "Гарри Поттер и философский камень", "Грозовой перевал".
-    private static void ex2(){
+    private static void ex2() {
         List<ArrayList<String>> list = new ArrayList<>();
 
         Scanner scCount1 = new Scanner(System.in);
@@ -74,13 +74,13 @@ public class tasks {
 
             }
             list.add(book);
-            for(ArrayList<String> item:list){
+            for (ArrayList<String> item : list) {
                 System.out.println(item);
-        }
+            }
         }
     }
 
-//    3. Доделать задание 2.2 участникам семинара
+    //    3. Доделать задание 2.2 участникам семинара
     private static void ex3() {
         String[] planetsNamesStrArr = {"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune", "Uranus", "Pluto"};
         List<String> randomSolarSystem = new ArrayList<>();

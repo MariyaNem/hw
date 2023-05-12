@@ -25,19 +25,15 @@ public class task4 {
             String input = scanner.nextLine();
 
             if (input.equals("print")) {
-                System.out.println("Строки в обратном порядке:");
+                System.out.println("Строки в обратном порядке: ");
                 while (!list.isEmpty()) {
                     System.out.println(list.removeLast());
                 }
             } else if (input.equals("revert")) {
                 if (!list.isEmpty()) {
                     list.removeLast();
-                    System.out.println("Последняя введенная строка удалена из памяти.");
-                } else {
-                    System.out.println("Нет сохраненных строк для удаления.");
+                    System.out.println("Последняя строка удалена.");
                 }
-            } else {
-                list.addLast(input);
             }
         }
     }
