@@ -32,7 +32,7 @@ public class task4 {
             } else if (input.equals("revert")) {
                 if (!list.isEmpty()) {
                     list.removeLast();
-                    System.out.println("Последняя строка удалена.");
+                    System.out.println("Последняя строка была удалена.");
                 }
             }
         }
@@ -43,7 +43,7 @@ public class task4 {
         list.add("two");
         list.add("three");
         LinkedList<String> reversedList = reverseLinkedList(list);
-        System.out.println(reversedList); //
+        System.out.println(reversedList);
     }
 
     public static LinkedList reverseLinkedList(LinkedList list) {
